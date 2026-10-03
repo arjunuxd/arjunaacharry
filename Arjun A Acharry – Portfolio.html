@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Arjun A Acharry – UI/UX design, AI-assisted frontend development, project management, operations and team management. Based in Kerala, India.">
+<title>Arjun A Acharry – Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--bg:#fff;--ink:#16181d;--mute:#5d636e;--line:#dcdfe4;--accent:#0f5c4d;
+--serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:calc(60px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}
+a:hover{text-decoration-color:var(--accent);color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 28px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:#fff;padding:8px 14px;z-index:20}
+.skip:focus{left:8px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+nav{display:flex;justify-content:space-between;align-items:center;height:60px;gap:24px}
+nav b{font-family:var(--serif);font-weight:400;font-size:22px;white-space:nowrap}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-size:14.5px;overflow-x:auto;scrollbar-width:none}
+nav ul::-webkit-scrollbar{display:none}
+nav li a{display:block;padding:20px 0 17px;text-decoration:none;color:var(--mute);border-bottom:2px solid transparent;white-space:nowrap}
+nav li a:hover{color:var(--ink)}
+nav li a.on{color:var(--ink);border-color:var(--accent)}
+.hero{display:grid;grid-template-columns:1.3fr 1fr;gap:72px;padding:88px 0 72px;align-items:end}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(58px,10vw,116px);line-height:.94;letter-spacing:-.02em;margin:0 0 28px}
+.lead{font-size:20px;color:var(--mute);max-width:470px;margin:0}
+.profile{margin:0}
+.profile div{display:grid;grid-template-columns:104px 1fr;gap:16px;padding:13px 0;border-top:1px solid var(--line)}
+.profile div:last-child{border-bottom:1px solid var(--line)}
+.profile dt{font-size:14px;color:var(--mute);padding-top:2px}
+.profile dd{margin:0;font-weight:500;line-height:1.5}
+.profile dd small{display:block;font-weight:400;color:var(--mute);font-size:14.5px}
+.profile ol{margin:0;padding:0;list-style:none}
+.profile .sep a{margin-right:14px}
+.hero{align-items:start;padding:84px 0 76px}
+h1{margin:0 0 32px}
+.statement{font-family:var(--serif);font-size:clamp(26px,3.2vw,34px);line-height:1.25;max-width:520px;margin:0 0 28px}
+.areas-line{display:flex;flex-wrap:wrap;gap:4px 0;list-style:none;padding:0;margin:0 0 36px;font-size:15px;color:var(--mute);max-width:540px}
+.areas-line li:not(:last-child)::after{content:"/";margin:0 12px;color:#b4bac4}
+.cta{display:flex;gap:28px;align-items:center;flex-wrap:wrap}
+.btn-solid{background:var(--ink);color:#fff;padding:14px 26px;text-decoration:none;font-weight:600;font-size:15px;border-radius:2px;transition:background .2s}
+.btn-solid:hover{background:var(--accent);color:#fff}
+.btn-link{font-weight:600;font-size:15px;text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:2px}
+.btn-link:hover{border-color:var(--accent)}
+.profile{margin-top:10px}
+.figures{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink)}
+.figures div{padding:24px 24px 0 0}
+.figures b{display:block;font-family:var(--serif);font-weight:400;font-size:46px;line-height:1.1}
+.figures span{color:var(--mute);font-size:15px;display:block;max-width:240px}
+section{padding:96px 0 0}
+.sec{display:grid;grid-template-columns:230px 1fr;gap:32px;padding-top:28px;border-top:1px solid var(--line)}
+h2{font-family:var(--serif);font-weight:400;font-size:38px;line-height:1.1;margin:0}
+.row{display:grid;grid-template-columns:200px 1fr;gap:6px 32px;padding:22px 0;border-top:1px solid var(--line)}
+.row:first-child{border-top:0;padding-top:0}
+.row dt,.row h3{font-family:var(--serif);font-weight:400;font-size:25px;line-height:1.2;margin:0}
+.row dd{margin:0;color:var(--mute)}
+.job{display:grid;grid-template-columns:140px 1fr;gap:4px 28px;padding:26px 0;border-top:1px solid var(--line)}
+.job:first-child{border-top:0;padding-top:0}
+.when{font-size:14px;color:var(--mute);padding-top:5px}
+.job h3,.proj h3{font-family:var(--serif);font-weight:400;font-size:25px;line-height:1.2;margin:0}
+.org{color:var(--accent);font-weight:600;font-size:15px;margin:2px 0 10px}
+ul.pts{margin:0;padding-left:18px}
+.pts li{margin-bottom:5px}
+.pts li::marker{color:var(--accent)}
+.proj{padding:26px 0;border-top:1px solid var(--line)}
+.proj:first-child{border-top:0;padding-top:0}
+.proj.lead-proj h3{font-size:34px}
+.stack{font-size:14px;color:var(--mute);margin:12px 0 0}
+.projgrid{display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
+.projgrid .proj:nth-child(-n+2){border-top:1px solid var(--line)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px 48px}
+.two h3{font-size:14px;font-weight:600;color:var(--mute);margin:0 0 14px;letter-spacing:0}
+.two ul{list-style:none;margin:0;padding:0}
+.two li{padding:12px 0;border-top:1px solid var(--line)}
+.two li b{display:block;font-weight:600}
+.two li span{color:var(--mute);font-size:15px}
+.skills div{display:grid;grid-template-columns:230px 1fr;gap:4px 32px;padding:18px 0;border-top:1px solid var(--line)}
+.skills div:first-child{border-top:0;padding-top:0}
+.skills dt{font-family:var(--serif);font-size:23px;line-height:1.25}
+.skills dd{margin:0;color:var(--mute)}
+.skills dd b{color:var(--ink);font-weight:600}
+.langs{margin-top:28px;padding-top:16px;border-top:1px solid var(--line);color:var(--mute);font-size:15px}
+.mail{font-family:var(--serif);font-size:clamp(24px,4vw,38px);color:var(--accent);text-decoration-color:var(--accent)}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--mute);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media (max-width:840px){
+.hero{grid-template-columns:1fr;gap:40px;padding:56px 0 48px}
+.figures{grid-template-columns:1fr}.figures div{padding:18px 0 0}
+section{padding-top:64px}
+.sec,.row,.job,.skills div{grid-template-columns:1fr}.sec{gap:20px}
+.projgrid,.two{grid-template-columns:1fr}.projgrid .proj:nth-child(2){border-top:1px solid var(--line)}
+nav b{display:none}nav ul{gap:22px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{header{display:none}section{padding-top:28px}}
+.progress{position:fixed;top:env(safe-area-inset-top,0px);left:0;height:2px;width:100%;background:var(--accent);transform-origin:0 50%;transform:scaleX(0);z-index:30;pointer-events:none}
+.top{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));width:44px;height:44px;display:grid;place-items:center;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:2px;cursor:pointer;opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .25s,transform .25s,visibility .25s,background .2s,color .2s;z-index:15}
+.top.show{opacity:1;visibility:visible;transform:none}
+.top:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.job h3,.proj h3,.row dt,.skills dt{transition:color .2s}
+.job:hover h3,.proj:hover h3,.row:hover dt,.skills div:hover dt{color:var(--accent)}
+.js .rv{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
+.js .rv.in{opacity:1;transform:none}
+@media print{.top,.progress{display:none}.js .rv{opacity:1;transform:none}}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+.wrap{padding-left:max(28px,env(safe-area-inset-left,0px));padding-right:max(28px,env(safe-area-inset-right,0px))}
+.hero>*,.sec>*,.two>*,.projgrid>*,.job>*,.row>*,.skills div>*,.figures>*{min-width:0}
+h1,.statement,.pts li,dd,.two li{overflow-wrap:break-word}
+.mail{overflow-wrap:anywhere}
+@media (min-width:841px) and (max-width:1100px){
+.hero{gap:48px}.sec{grid-template-columns:180px 1fr;gap:24px}.row{grid-template-columns:170px 1fr;gap:6px 24px}
+.skills div{grid-template-columns:190px 1fr;gap:4px 24px}h2{font-size:34px}.projgrid{gap:0 32px}.two{gap:32px}.job{grid-template-columns:130px 1fr;gap:4px 22px}}
+@media (min-width:561px) and (max-width:840px){
+.figures{grid-template-columns:repeat(3,1fr)}.figures div{padding:20px 16px 0 0}.figures b{font-size:38px}
+.two{grid-template-columns:1fr 1fr;gap:28px}.projgrid{grid-template-columns:1fr 1fr;gap:0 28px}.projgrid .proj:nth-child(2){border-top:1px solid var(--line)}
+.lead,.statement{max-width:none}}
+@media (max-width:560px){
+body{font-size:16px}
+.wrap{padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h2{font-size:32px}.statement{font-size:25px}
+.areas-line{font-size:14px}.areas-line li:not(:last-child)::after{margin:0 8px}
+.cta{gap:18px}.btn-solid{padding:13px 22px}
+.job{padding:22px 0}.row dt,.job h3,.proj h3,.skills dt{font-size:22px}.proj.lead-proj h3{font-size:28px}
+.profile div{grid-template-columns:92px 1fr;gap:12px}
+.figures b{font-size:40px}
+.top{right:14px}
+footer .wrap{flex-direction:column}}
+@media (max-width:360px){h1{font-size:50px}.profile div{grid-template-columns:1fr;gap:2px}nav ul{gap:18px}}
+@media (min-width:1500px){body{font-size:18px}.wrap{max-width:1160px}h1{font-size:128px}}
+@media (max-height:520px) and (orientation:landscape){.hero{padding-top:40px;padding-bottom:40px}section{padding-top:48px}nav{height:52px}}
+@media (hover:none){.job:hover h3,.proj:hover h3,.row:hover dt,.skills div:hover dt{color:inherit}.btn-solid:hover{background:var(--ink)}.top:hover{background:var(--bg);color:var(--ink);border-color:var(--line)}}
+.menu-btn{display:none}
+@media (max-width:840px){
+nav b{display:block;font-size:21px}
+.menu-btn{display:block;position:relative;width:44px;height:44px;margin-right:-10px;border:0;background:none;cursor:pointer;color:var(--ink)}
+.menu-btn span{position:absolute;left:11px;right:11px;height:2px;background:currentColor;transition:transform .25s,top .25s}
+.menu-btn span:nth-child(1){top:17px}.menu-btn span:nth-child(2){top:25px}
+.menu-btn.is-open span:nth-child(1){top:21px;transform:rotate(45deg)}
+.menu-btn.is-open span:nth-child(2){top:21px;transform:rotate(-45deg)}
+nav ul{position:absolute;left:0;right:0;top:100%;flex-direction:column;gap:0;overflow:visible;background:var(--bg);border-bottom:1px solid var(--ink);padding:4px max(20px,env(safe-area-inset-right,0px)) 14px max(20px,env(safe-area-inset-left,0px));visibility:hidden;opacity:0;transform:translateY(-8px);transition:opacity .22s,transform .22s,visibility .22s;max-height:calc(100vh - 64px);max-height:calc(100dvh - 64px);overflow-y:auto}
+nav ul.open{visibility:visible;opacity:1;transform:none}
+nav li a{padding:15px 0;font-family:var(--serif);font-size:27px;line-height:1.2;color:var(--ink);border-bottom:1px solid var(--line)}
+nav li:last-child a{border-bottom:0}
+nav li a.on{color:var(--accent);border-color:var(--line)}}
+@media (max-width:840px) and (prefers-reduced-motion:reduce){.menu-btn span,nav ul{transition:none}}
+#contact{padding-bottom:96px}
+.big{font-family:var(--serif);font-size:clamp(34px,5vw,56px);line-height:1.05;letter-spacing:-.01em;margin:0 0 20px}
+.blurb{color:var(--mute);font-size:19px;max-width:520px;margin:0 0 28px}
+.mail{display:inline-block;max-width:100%}
+.clinks{display:flex;flex-wrap:wrap;gap:8px 28px;list-style:none;margin:32px 0 0;padding:20px 0 0;border-top:1px solid var(--line)}
+.clinks a{font-weight:600;font-size:15px}
+@media (max-width:840px){#contact{padding-bottom:64px}}
+@media (max-width:560px){.blurb{font-size:17px}.clinks{margin-top:24px}}
+.statement{margin-bottom:36px}
+.profile ol{counter-reset:n}
+.profile ol li{counter-increment:n;display:flex;gap:10px;padding:1px 0}
+.profile ol li::before{content:counter(n) ".";color:var(--accent);font-weight:600;min-width:1.3em}
+.profile ol li{display:block;padding:1px 0}
+.profile ol li::before{content:none}
+.profile ol li{display:inline;padding:0}
+.profile ol li:not(:last-child)::after{content:"/";margin:0 10px;color:#b4bac4}
+.profile ol li{display:inline-block;line-height:1.5}
+.profile .sep{display:flex;flex-wrap:wrap;gap:0 16px}
+.profile .sep a{margin:0}
+.profile .sep a,.clinks a{display:inline-block;padding:6px 0}
+.hero{display:grid;grid-template-columns:230px 1fr;column-gap:32px;row-gap:0;padding-top:80px;padding-bottom:72px;align-items:start}
+.hero h1{grid-column:1/-1;margin:0 0 40px;font-size:clamp(72px,10.5vw,132px);line-height:.95}
+.hero h1 br{display:none}
+.hero-main,.hero .profile{grid-column:2}
+.hero .profile{margin-top:44px}
+.hero .statement{font-size:clamp(28px,3.4vw,38px);max-width:620px;margin-bottom:32px}
+@media (min-width:841px) and (max-width:1100px){.hero{grid-template-columns:180px 1fr;column-gap:24px}}
+@media (max-width:840px){
+.hero{grid-template-columns:1fr;padding-top:56px;padding-bottom:48px}
+.hero h1{font-size:clamp(50px,16vw,104px);margin-bottom:28px}
+.hero h1 br{display:inline}
+.hero-main,.hero .profile{grid-column:1}
+.hero .profile{margin-top:36px}
+.hero .statement{font-size:clamp(25px,5vw,32px);max-width:none}}
+.sec{border-top:0;background-image:linear-gradient(var(--line),var(--line));background-repeat:no-repeat;background-size:100% 1px;background-origin:content-box;background-position:0 -28px}
+.hero h1{font-size:clamp(72px,15vw,190px)}
+@media (min-width:841px){.figures{margin-left:262px}}
+@media (min-width:841px) and (max-width:1100px){.figures{margin-left:204px}.figures b{font-size:36px}}
+@media (max-width:840px){.hero h1{font-size:clamp(50px,16vw,104px)}}
+.kv{display:grid;grid-template-columns:1fr;gap:8px;padding:24px 0;border-top:1px solid var(--line)}
+.kv:first-child{border-top:0;padding-top:0}
+.kv h3{font-family:var(--serif);font-weight:400;font-size:25px;line-height:1.2;letter-spacing:0;margin:0;color:var(--ink)}
+.kv ul{list-style:none;margin:0;padding:0}
+.kv li{padding:0 0 14px}.kv li:last-child{padding-bottom:0}
+.kv li b{display:block;font-weight:600}
+.kv li span{color:var(--mute);font-size:15px}
+.profile .sep{margin:-6px 0}
+.projgrid .proj:first-child{padding-top:26px}
+:root{--k:200px}
+@media (min-width:841px){
+.row,.job,.skills div,.kv{grid-template-columns:var(--k) 1fr;column-gap:32px}
+.hero .profile div{grid-template-columns:var(--k) 1fr;column-gap:32px}}
+@media (min-width:841px) and (max-width:1100px){:root{--k:170px}}
+@media (max-width:560px){.kv h3{font-size:22px}}
+@media (min-width:841px){.figures{grid-template-columns:calc(var(--k) + 32px) 1fr 1fr}.figures div:first-child{padding-right:24px}}
+.hero{grid-template-columns:1.3fr 1fr;column-gap:72px;row-gap:0;padding-top:84px;padding-bottom:76px;align-items:start}
+.hero h1{grid-column:auto;font-size:clamp(58px,10vw,116px);line-height:.94;margin:0 0 32px}
+.hero h1 br{display:inline}
+.hero .profile{grid-column:auto;margin-top:10px}
+.hero .statement{font-size:clamp(26px,3.2vw,34px);max-width:520px;margin:0 0 36px}
+.hero .profile div{grid-template-columns:104px 1fr;column-gap:16px}
+@media (min-width:841px){.figures{margin-left:0;grid-template-columns:repeat(3,1fr)}}
+@media (min-width:841px) and (max-width:1100px){.hero{column-gap:48px}.figures b{font-size:38px}}
+@media (max-width:840px){.hero{grid-template-columns:1fr;row-gap:40px;padding-top:56px;padding-bottom:48px}.hero .profile{margin-top:0}.hero .statement{max-width:none;font-size:clamp(25px,5vw,32px)}}
+@media (max-width:560px){.hero .profile div{grid-template-columns:92px 1fr;column-gap:12px}}
+@media (max-width:360px){.hero h1{font-size:50px}.hero .profile div{grid-template-columns:1fr;column-gap:0}}
+@media (max-height:520px) and (orientation:landscape){.hero{padding-top:40px;padding-bottom:40px}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" id="bar" aria-hidden="true"></div>
+<header><div class="wrap"><nav aria-label="Main">
+<b>Arjun A Acharry</b>
+<ul id="menu"><li><a href="#expertise">Expertise</a></li><li><a href="#experience">Experience</a></li><li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li><li><a href="#education">Education</a></li><li><a href="#recognition">Recognition</a></li><li><a href="#contact">Contact</a></li></ul>
+<button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+</nav></div></header>
+
+<main id="main">
+<div class="wrap hero">
+<div>
+<h1>Arjun A<br>Acharry</h1>
+<p class="statement">I design and build digital products, and I help teams plan, work together and deliver on time.</p>
+<div class="cta"><a class="btn-solid" href="mailto:arjunaacharry01@gmail.com">Email me</a><a class="btn-link" href="#experience">See my experience</a></div>
+</div>
+<dl class="profile" aria-label="Profile">
+<div class="exp"><dt>Expertise</dt><dd><ol><li>UI/UX design</li><li>AI-assisted frontend development</li><li>Project management</li><li>Operations</li><li>Team management</li></ol></dd></div>
+<div><dt>Based in</dt><dd>Kerala, India</dd></div>
+<div><dt>Studying</dt><dd>Master of Computer Applications<small>Kristu Jyoti College, expected April 2027</small></dd></div>
+<div><dt>Freelance</dt><dd>Meta Ads Manager<small>Swaralaya School of Music</small></dd></div>
+<div><dt>Open to</dt><dd>Roles and freelance projects</dd></div>
+<div><dt>Find me</dt><dd class="sep"><a href="https://www.linkedin.com/in/arjun-a-acharry">LinkedIn</a><a href="https://www.behance.net/arjunaacharry">Behance</a><a href="https://github.com/arjunuxd">GitHub</a></dd></div>
+</dl>
+</div>
+<div class="wrap"><div class="figures">
+<div><b data-count="500">500+</b><span>students mentored through workshops, bootcamps and hackathons</span></div>
+<div><b data-count="50000">50,000+</b><span>member learning community designed for at GTech MuLearn</span></div>
+<div><b>Top 5 of 200+</b><span>teams at the OLabs National Hackathon</span></div>
+</div></div>
+
+<section id="expertise"><div class="wrap sec">
+<h2>Expertise</h2>
+<dl class="rows" style="margin:0">
+<div class="row"><dt>UI/UX design</dt><dd>User flows, wireframes, prototypes and design systems in Figma, for web and mobile products.</dd></div>
+<div class="row"><dt>AI-assisted frontend development</dt><dd>Responsive web apps in React and TypeScript, built with AI tools for speed and checked by hand for clean code.</dd></div>
+<div class="row"><dt>Project management</dt><dd>Turning requirements into clear plans, coordinating design, development and release in Agile sprints, and keeping documentation current.</dd></div>
+<div class="row"><dt>Operations</dt><dd>Planned and ran innovation programmes, events and student initiatives as Operations Lead, with better workflows and resource planning.</dd></div>
+<div class="row"><dt>Team management</dt><dd>Led a creative team and worked across groups. Mentored 500+ students and ran 10+ workshops.</dd></div>
+</dl></div></section>
+
+<section id="experience"><div class="wrap sec">
+<h2>Experience</h2>
+<div>
+<div class="job"><div class="when">Feb – Mar 2026</div><div><h3>UI/UX Intern</h3><p class="org">Foodo AI, London (Remote)</p>
+<ul class="pts"><li>Designed responsive interfaces for 3+ web and mobile products.</li><li>Helped redesign Hitchki and restaurant website templates.</li><li>Built design patterns that made internal tools more consistent.</li><li>Worked in Agile sprints and delivered design assets on schedule.</li></ul></div></div>
+<div class="job"><div class="when">Freelance</div><div><h3>Meta Ads Manager</h3><p class="org">Swaralaya School of Music</p>
+<ul class="pts"><li>Set up and manage Meta Ads campaigns.</li><li>Choose audiences and coordinate creatives.</li></ul></div></div>
+<div class="job"><div class="when">Apr 2024 – Apr 2025</div><div><h3>Operations Lead</h3><p class="org">Inovus Labs IEDC, Kottayam</p>
+<ul class="pts"><li>Planned and delivered innovation programmes, events and student initiatives.</li><li>Worked with cross-functional teams to simplify workflows and plan resources.</li></ul></div></div>
+<div class="job"><div class="when">Apr 2023 – Apr 2024</div><div><h3>Creative Lead</h3><p class="org">Inovus Labs IEDC, Kottayam</p>
+<ul class="pts"><li>Led branding and creative campaigns, and wrote visual guidelines used at official events.</li><li>Ran 5+ UI/UX and digital design workshops for 100+ members.</li></ul></div></div>
+<div class="job"><div class="when">Jun – Dec 2023</div><div><h3>Graphic Design Intern</h3><p class="org">GTech MuLearn, Kerala</p>
+<ul class="pts"><li>Made designs for events, campaigns and social media for a 50,000+ member learning community.</li><li>Worked weekly with developers and content teams in an Agile setup.</li></ul></div></div>
+<div class="job"><div class="when">App management</div><div><h3>Application and Digital Platform Management</h3><p class="org">EchoBits and Meenmozhi Applications</p>
+<ul class="pts"><li>Managed app uploads, releases, updates and store assets on Google Play Console.</li><li>Coordinated requirements between development, design and release teams.</li></ul></div></div>
+</div></div></section>
+
+<section id="projects"><div class="wrap sec">
+<h2>Projects</h2>
+<div>
+<article class="proj lead-proj"><h3>Ente Nadu</h3><p class="org">Civic issue reporting platform · Full-stack</p>
+<ul class="pts"><li>Citizens report local issues on Telegram with a photo, description and location.</li><li>Google Gemini writes the complaint in English, Malayalam or Manglish.</li><li>Authorities verify, assign and track each complaint in their own portal.</li></ul>
+<p class="stack">React, TypeScript, Node.js, MongoDB, Gemini API</p></article>
+<div class="projgrid">
+<article class="proj"><h3>Shiftly</h3><p class="org">Flexible part-time job platform · Full-stack</p><ul class="pts"><li>Connects students with vendors who offer flexible work.</li><li>Four user roles, with job posts, applications, messaging and employer verification.</li></ul><p class="stack">Firebase, Firestore</p></article>
+<article class="proj"><h3>Gigwork Design System</h3><p class="org">Gig commerce platform · UI/UX</p><ul class="pts"><li>Reusable components, design tokens and interaction patterns for a consistent interface.</li></ul><p class="stack">Figma</p></article>
+<article class="proj"><h3>Sree Buddha Central School and Aspireon</h3><p class="org">Website and learning platform · UI/UX</p><ul class="pts"><li>Clear navigation for students, parents and teachers.</li><li>Complete digital platform for online and offline learning.</li></ul></article>
+<article class="proj"><h3>WDC Application</h3><p class="org">Car wash management platform · Testing</p><ul class="pts"><li>Tested workflows end to end across a multi-branch system and reported issues to developers.</li></ul></article>
+</div></div></div></section>
+
+<section id="skills"><div class="wrap sec">
+<h2>Skills</h2>
+<dl class="skills" style="margin:0">
+<div><dt>UI/UX design</dt><dd><b>Figma</b>, Adobe Photoshop, Canva. User research, user flows, wireframing, prototyping, usability testing, design systems.</dd></div>
+<div><dt>AI-assisted frontend development</dt><dd><b>React</b>, TypeScript, Vite, HTML, CSS, JavaScript. Prompt engineering, Gemini API. Backend basics in Node.js, Express, MongoDB and Firebase.</dd></div>
+<div><dt>Project management</dt><dd><b>Agile</b> sprints, requirement analysis, documentation, manual testing, Git and GitHub.</dd></div>
+<div><dt>Operations</dt><dd><b>Event and programme planning</b>, workflow improvement, app releases on Google Play Console, Meta Ads Manager.</dd></div>
+<div><dt>Team management</dt><dd><b>Leading creative teams</b>, working across groups, mentoring and running workshops.</dd></div>
+</dl></div></section>
+
+<section id="education"><div class="wrap sec">
+<h2>Education</h2>
+<div>
+<div class="kv"><h3>Degrees</h3><ul>
+<li><b>Master of Computer Applications</b><span>Kristu Jyoti College of Management and Technology, Kottayam · Expected April 2027</span></li>
+<li><b>Bachelor of Computer Applications</b><span>Kristu Jyoti College of Management and Technology, Kottayam · 2022 – 2025</span></li></ul></div>
+<div class="kv"><h3>Certificates</h3><ul>
+<li><b>IBM Data Fundamentals</b><span>IBM SkillsBuild</span></li>
+<li><b>User Interface Design</b><span>NPTEL</span></li>
+<li><b>ChatGPT and Generative AI in Business</b><span>Udemy</span></li></ul></div>
+</div></div></section>
+
+<section id="recognition"><div class="wrap sec">
+<h2>Recognition and community</h2>
+<div>
+<div class="kv"><h3>Recognition</h3><ul>
+<li><b>Top 20 Student Innovator Teams in India</b><span>Indian Startup League, 2025</span></li>
+<li><b>District Winner</b><span>Young Innovators Programme 5.0, KDISC, 2025</span></li>
+<li><b>Top 5 Finalist</b><span>OLabs National Hackathon, 2025</span></li></ul></div>
+<div class="kv"><h3>Community</h3><ul>
+<li><b>UX/UI volunteer</b><span>Kerala Police Cyberdome, 2023 – present</span></li>
+<li><b>Digital literacy volunteer</b><span>Unnat Bharat Abhiyan, 2024 – 2025</span></li>
+<li><b>Workshop leader</b><span>10+ sessions on UI/UX, design thinking and blog writing</span></li></ul></div>
+<div class="kv"><h3>Languages</h3><ul><li><b>English</b><span>Professional</span></li><li><b>Malayalam</b><span>Native</span></li></ul></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap sec">
+<h2>Contact</h2>
+<div>
+<p class="big">Let's work together.</p>
+<p class="blurb">I am open to roles and projects in design, frontend development, project management and operations. Send me a message and I will reply soon.</p>
+<a class="mail" href="mailto:arjunaacharry01@gmail.com">arjunaacharry01@gmail.com</a>
+<ul class="clinks"><li><a href="https://www.linkedin.com/in/arjun-a-acharry">LinkedIn</a></li><li><a href="https://www.behance.net/arjunaacharry">Behance</a></li><li><a href="https://github.com/arjunuxd">GitHub</a></li></ul>
+</div></div></section>
+</main>
+<footer><div class="wrap"><span>© 2026 Arjun A Acharry</span><span>Kerala, India</span></div></footer>
+<button class="top" id="top" type="button" aria-label="Back to top"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square"><path d="M8 13V3M3.5 7.5L8 3l4.5 4.5"/></svg></button>
+<script>
+(function(){
+var calm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var navL=[].slice.call(document.querySelectorAll('nav li a')),navUl=document.querySelector('nav ul'),hdr=document.querySelector('header');
+function box(id){var s=document.getElementById(id);return s&&(s.firstElementChild||s)}
+function goTo(id){var t=box(id);if(!t)return;var y=t.getBoundingClientRect().top+window.pageYOffset-hdr.offsetHeight-24;window.scrollTo({top:Math.max(y,0),behavior:calm?'auto':'smooth'})}
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="#"]');if(!a)return;var id=a.getAttribute('href').slice(1);if(!id||!document.getElementById(id))return;e.preventDefault();setMenu(false);goTo(id)});
+var mBtn=document.getElementById('menuBtn'),mUl=document.getElementById('menu');
+function setMenu(o){mUl.classList.toggle('open',o);mBtn.classList.toggle('is-open',o);mBtn.setAttribute('aria-expanded',o?'true':'false');mBtn.setAttribute('aria-label',o?'Close menu':'Open menu')}
+mBtn.addEventListener('click',function(){setMenu(!mUl.classList.contains('open'))});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&mUl.classList.contains('open')){setMenu(false);mBtn.focus()}});
+document.addEventListener('click',function(e){if(mUl.classList.contains('open')&&!e.target.closest('header'))setMenu(false)});
+window.addEventListener('resize',function(){if(window.innerWidth>840)setMenu(false)});
+var lastOn=null;
+function setActive(){var y=window.pageYOffset,line=hdr.offsetHeight+window.innerHeight*.3,cur=null;
+navL.forEach(function(a){var id=a.getAttribute('href').slice(1),t=document.getElementById(id);if(t&&t.getBoundingClientRect().top<=line)cur=id});
+if(window.innerHeight+y>=document.documentElement.scrollHeight-4)cur=navL[navL.length-1].getAttribute('href').slice(1);
+if(y<160)cur=null;
+if(cur===lastOn)return;lastOn=cur;
+navL.forEach(function(a){var on=a.getAttribute('href')==='#'+cur;a.classList.toggle('on',on);if(on&&navUl.scrollWidth>navUl.clientWidth)navUl.scrollLeft=a.offsetLeft-navUl.clientWidth/2+a.offsetWidth/2})}
+var bar=document.getElementById('bar'),top=document.getElementById('top'),tick=false;
+function upd(){var h=document.documentElement,max=h.scrollHeight-h.clientHeight,y=window.pageYOffset;
+bar.style.transform='scaleX('+(max>0?Math.min(y/max,1):0)+')';top.classList.toggle('show',y>700);setActive();tick=false}
+window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+top.addEventListener('click',function(){window.scrollTo({top:0,behavior:calm?'auto':'smooth'});document.getElementById('main').focus({preventScroll:true})});
+document.getElementById('main').setAttribute('tabindex','-1');
+if(calm||!('IntersectionObserver' in window))return;
+document.documentElement.classList.add('js');
+var els=[].slice.call(document.querySelectorAll('.sec,.figures'));els.forEach(function(e){e.classList.add('rv')});
+var io=new IntersectionObserver(function(en){en.forEach(function(x){if(!x.isIntersecting)return;x.target.classList.add('in');io.unobserve(x.target);
+if(x.target.classList.contains('figures'))[].forEach.call(x.target.querySelectorAll('[data-count]'),count)})},{threshold:.12});
+els.forEach(function(e){io.observe(e)});
+function count(el){var n=+el.dataset.count,t0=null;function f(t){if(!t0)t0=t;var p=Math.min((t-t0)/1200,1),v=Math.round(n*(1-Math.pow(1-p,3)));el.textContent=v.toLocaleString('en-US')+'+';if(p<1)requestAnimationFrame(f)}requestAnimationFrame(f)}
+})();
+</script>
+</body>
+</html>
