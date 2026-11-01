@@ -1,0 +1,23 @@
+{
+  "name": "Arjun A Acharry — UI/UX Designer & Frontend Developer",
+  "short_name": "Arjun A Acharry",
+  "description": "Portfolio of Arjun A Acharry, a UI/UX designer and AI-assisted frontend developer in Kerala, India.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0A090A",
+  "theme_color": "#0A090A",
+  "icons": [
+    {
+      "src": "Image/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "Image/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
